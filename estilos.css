@@ -1,0 +1,450 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffdf5;
+    color: #26351f;
+}
+
+
+/* =========================================
+   BARRA DE NAVEGACIÓN
+========================================= */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background-color: #fffdf5;
+
+    border-bottom: 1px solid #eee5c9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    font-size: 30px;
+}
+
+.logo h2 {
+    font-size: 22px;
+    color: #49652c;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #39452e;
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.activo {
+    color: #d88b19;
+}
+
+
+/* =========================================
+   SECCIÓN PRINCIPAL
+========================================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #fffdf5 0%,
+        #f5f1d9 100%
+    );
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.etiqueta {
+    color: #d88b19;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.08;
+
+    color: #344724;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d88b19;
+}
+
+.descripcion {
+    max-width: 550px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #62685c;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.boton {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background-color: #d88b19;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #b96f0b;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   IMAGEN / ELEMENTO VISUAL DEL MANGO
+========================================= */
+
+.hero-image {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mango-circle {
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 150px;
+
+    background: #f3c54d;
+
+    box-shadow:
+        0 25px 50px rgba(80, 70, 20, 0.15);
+}
+
+
+/* =========================================
+   PRODUCTO
+========================================= */
+
+.producto {
+    padding: 100px 10%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.titulo-seccion {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+}
+
+.titulo-seccion h2 {
+    font-size: 40px;
+
+    color: #344724;
+
+    margin-bottom: 15px;
+}
+
+.titulo-seccion p {
+    color: #6b7065;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.caracteristicas {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.card {
+
+    padding: 40px 30px;
+
+    background-color: #fffdf5;
+
+    border: 1px solid #eee5c9;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.icono {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.card h3 {
+
+    color: #49652c;
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+.card p {
+
+    color: #70756c;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NOSOTROS
+========================================= */
+
+.nosotros {
+
+    padding: 100px 15%;
+
+    background-color: #edf2df;
+}
+
+.nosotros div {
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.nosotros h2 {
+
+    font-size: 42px;
+
+    color: #344724;
+
+    margin-bottom: 25px;
+}
+
+.nosotros p:last-child {
+
+    color: #62685c;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contacto {
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background-color: #fffdf5;
+}
+
+.contacto h2 {
+
+    font-size: 40px;
+
+    color: #344724;
+
+    margin-bottom: 20px;
+}
+
+.contacto p {
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #344724;
+
+    color: white;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   DISEÑO PARA CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 0 5%;
+    }
+
+    nav {
+
+        gap: 12px;
+    }
+
+    nav a {
+
+        font-size: 12px;
+    }
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 5%;
+    }
+
+    .hero-text {
+
+        width: 100%;
+    }
+
+    .hero h1 {
+
+        font-size: 40px;
+    }
+
+    .descripcion {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .mango-circle {
+
+        width: 250px;
+        height: 250px;
+
+        font-size: 100px;
+    }
+
+    .caracteristicas {
+
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros {
+
+        padding: 80px 8%;
+    }
+
+    .nosotros h2 {
+
+        font-size: 32px;
+    }
+
+}
